@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <>
-    hello
+    hello from the homepage.
     </>
   );
 }
