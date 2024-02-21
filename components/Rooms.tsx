@@ -10,6 +10,7 @@ import Image from "next/image";
 import Single from "../public/assets/single-room.jpg";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const rooms = [
   {
@@ -36,7 +37,7 @@ const rooms = [
 
 const Rooms = () => {
   return (
-    <section className="container mt-[60px] mb-[60px]">
+    <section className="container mt-[100px] mb-[60px]">
       <div className="text-center">
         <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-3xl">
           Our Rooms
@@ -62,17 +63,22 @@ const Rooms = () => {
                       alt="card-image"
                       width={150}
                       height={300}
-                      className="w-full"
+                      className="w-full rounded-bl-lg rounded-br-lg"
                     />
                   </CardContent>
-                  <CardFooter>
+                  {/* <CardFooter>
                     <Button className="w-full">Read More</Button>
-                  </CardFooter>
+                  </CardFooter> */}
                 </Card>
               </Link>
             </div>
           );
         })}
+      </div>
+      <div >
+        <Link href="/rooms" className="flex justify-center md:justify-start mt-6 gap-x-2 ">
+          <Button>View All <ArrowRight className="ml-4"/></Button>
+        </Link>
       </div>
     </section>
   );
