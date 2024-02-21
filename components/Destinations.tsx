@@ -17,54 +17,54 @@ import GreekNight from "../public/assets/greek-night.jpg"
 const destinations = [
     {
         title: "Mount Olympus",
-        img: Olympus,
+        img: "/assets/mount-olympus.jpg",
         id: 1,
     },
-    // {
-    //     title: "Meteora",
-    //     img: {Meteora},
-    //     id: 2,
-    // },
-    // {
-    //     title: "Skiathos",
-    //     img: {Skiathos},
-    //     id: 3,
-    // },
-    // {
-    //     title: "Skopelos",
-    //     img: {Skopelos},
-    //     id: 4,
-    // },
-    // {
-    //     title: "Platamon Castle",
-    //     img: {Platamon},
-    //     id: 5,
-    // },
-    // {
-    //     title: "Thessaloniki",
-    //     img: {Thessaloniki},
-    //     id: 6,
-    // },
-    // {
-    //     title: "Athens",
-    //     img: {Athens},
-    //     id: 7,
-    // },
-    // {
-    //     title: "Ancient Dion",
-    //     img: {Dion},
-    //     id: 8,
-    // },
-    // {
-    //     title: "Waterland",
-    //     img: {Waterland},
-    //     id: 9,
-    // },
-    // {
-    //     title: "Greek Night",
-    //     img: {GreekNight},
-    //     id: 10,
-    // },
+    {
+        title: "Meteora",
+        img: "/assets/meteora.jpg",
+        id: 2,
+    },
+    {
+        title: "Skiathos",
+        img: "/assets/skiathos.jpg",
+        id: 3,
+    },
+    {
+        title: "Skopelos",
+        img: "/assets/skopelos.jpg",
+        id: 4,
+    },
+    {
+        title: "Platamon Castle",
+        img: "assets/platamon-castle-1.jpg",
+        id: 5,
+    },
+    {
+        title: "Thessaloniki",
+        img: "/assets/thessaloniki.jpg",
+        id: 6,
+    },
+    {
+        title: "Athens",
+        img: "/assets/athens.jpg",
+        id: 7,
+    },
+    {
+        title: "Ancient Dion",
+        img: "/assets/ancient-dion.jpg",
+        id: 8,
+    },
+    {
+        title: "Waterland",
+        img: "/assets/waterland.jpg",
+        id: 9,
+    },
+    {
+        title: "Greek Night",
+        img: "/assets/greek-night.jpg",
+        id: 10,
+    },
    
 ]
 
@@ -84,8 +84,8 @@ const Destinations = () => {
             <Card key={destination.id} className="group">
             <div className="relative overflow-hidden">
             <img
-                src={`${destination.img}`}
-                className="rounded-tl-lg rounded-tr-lg"
+                src={destination.img}
+                className="rounded-tl-lg rounded-tr-lg w-full"
                 alt="image"
                 width={400}
                 height={400}
