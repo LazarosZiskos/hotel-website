@@ -55,10 +55,10 @@ const services = [
 const Services = () => {
   return (
     <section className="container mt-[100px] mb-[100px]">
-        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-3xl text-center">
+        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl text-center">
           Our Services
         </h2>
-        <p className="text-slate-400/70 text-[14px] md:text-[16px] text-center mb-6">
+        <p className="text-slate-400/70 text-[14px] md:text-[18px] text-center mb-6">
           We offer a wide variety of services.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">

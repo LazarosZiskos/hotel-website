@@ -13,7 +13,7 @@ const Landing = () => {
     <div className="flex flex-col items-center md:flex-row md:justify-between md:gap-4 ">
       <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 gap-10">
         <h1 className="text-3xl text-center md:text-start md:text-5xl font-bold md:leading-snug tracking-wide">The <span className="text-primary">best holiday</span> is about to come!</h1>
-        <p className="text-center text-[14px] md:text-[18px] md:text-start text-slate-400/70">Only a small walk from the beach, our hotel is the best choice for you this summer! </p>
+        <p className="text-center text-[14px] md:text-[18px] md:text-start text-slate-400/70 leading-loose">Only a small walk from the beach, our hotel <br />is the best choice for you this summer! </p>
         <Link href="/about"><Button>Learn More <ArrowRight className="ml-2"/></Button></Link>
       </div>
 

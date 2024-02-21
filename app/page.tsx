@@ -1,6 +1,8 @@
+import Destinations from "@/components/Destinations";
 import Landing from "@/components/Landing";
 import Rooms from "@/components/Rooms";
 import Services from "@/components/Services";
+import Try from "@/components/Try";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <Landing />
       <Rooms />
       <Services />
+      <Destinations />
     </>
   );
 }

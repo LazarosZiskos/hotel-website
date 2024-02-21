@@ -39,10 +39,10 @@ const Rooms = () => {
   return (
     <section className="container mt-[100px] mb-[60px]">
       <div className="text-center">
-        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-3xl">
+        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl">
           Our Rooms
         </h2>
-        <p className="text-slate-400/70 text-[14px] md:text-[16px]">
+        <p className="text-slate-400/70 text-[14px] md:text-[18px]">
           Choose the ideal room for your holidays!
         </p>
       </div>
