@@ -79,16 +79,16 @@ const Destinations = () => {
         Visit popular destinations nearby and enjoy the best that the olympic
         Riviera region has to offer!
       </p>
-      <div className="grid grid-cols-3 gap-4 pt-4">
+      <div className="grid md:grid-cols-3 gap-4 pt-4">
         {destinations.map((destination) => (
             <Card key={destination.id} className="group">
             <div className="relative overflow-hidden">
             <img
                 src={destination.img}
-                className="rounded-tl-lg rounded-tr-lg w-full"
+                className="rounded-tl-lg rounded-tr-lg h-[250px] object-fill xl:w-full"
                 alt="image"
                 width={400}
-                height={400}
+                height={300}
               />
               <div className="absolute h-full w-full bg-black/20 flex items-center rounded-tl-lg rounded-tr-lg
               justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 ">
