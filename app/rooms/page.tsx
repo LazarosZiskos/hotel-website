@@ -25,24 +25,28 @@ const rooms = [
     id: 1,
     type: "Single Room",
     details: "Indulge in the ultimate luxury of our newly renovated Junior suite  offering comfort and style with stunning sea and street views. Designed for a maximum of two guests, each room is meticulously furnished with a double-size bed, a 43 Smart TV,and an en-suite bathroom. Our commitment to cleanliness ensures daily room cleaning and regular towel and sheet changes. Enjoy seamless browsing with complimentary high-speed Wi-Fi, and experience a peaceful stay in our soundproof, non-smoking rooms. Discover the epitome of comfort and elegance in our Junior suite, where exceptional hospitality awaits you.",
-    img: "/assets/single-room.jpg"
+    img: "/assets/single-room.jpg",
+    href: "/rooms/single"
   },
   {
     id: 2,
     type: "Double Room",
     details: "Indulge in the ultimate luxury of our newly renovated Junior suite  offering comfort and style with stunning sea and street views. Designed for a maximum of two guests, each room is meticulously furnished with a double-size bed, a 43 Smart TV,and an en-suite bathroom. Our commitment to cleanliness ensures daily room cleaning and regular towel and sheet changes. Enjoy seamless browsing with complimentary high-speed Wi-Fi, and experience a peaceful stay in our soundproof, non-smoking rooms. Discover the epitome of comfort and elegance in our Junior suite, where exceptional hospitality awaits you.",
-    img: "/assets/single-room.jpg"
+    img: "/assets/single-room.jpg",
+    href: "/rooms/double"
   },
   {
     id: 3,
     type: "Triple Room",
     img: "/assets/single-room.jpg",
+    href: "/rooms/triple",
     details: "Indulge in the ultimate luxury of our newly renovated Junior suite  offering comfort and style with stunning sea and street views. Designed for a maximum of two guests, each room is meticulously furnished with a double-size bed, a 43 Smart TV,and an en-suite bathroom. Our commitment to cleanliness ensures daily room cleaning and regular towel and sheet changes. Enjoy seamless browsing with complimentary high-speed Wi-Fi, and experience a peaceful stay in our soundproof, non-smoking rooms. Discover the epitome of comfort and elegance in our Junior suite, where exceptional hospitality awaits you."
   },
   {
     id: 4,
     type: "Family Room",
     img: "/assets/single-room.jpg",
+    href: "/rooms/family",
     details: "Indulge in the ultimate luxury of our newly renovated Junior suite  offering comfort and style with stunning sea and street views. Designed for a maximum of two guests, each room is meticulously furnished with a double-size bed, a 43 Smart TV,and an en-suite bathroom. Our commitment to cleanliness ensures daily room cleaning and regular towel and sheet changes. Enjoy seamless browsing with complimentary high-speed Wi-Fi, and experience a peaceful stay in our soundproof, non-smoking rooms. Discover the epitome of comfort and elegance in our Junior suite, where exceptional hospitality awaits you."
   },
 ]
@@ -100,7 +104,7 @@ const page = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-end pt-20">
-                <Link href="/rooms/single">
+                <Link href={room.href}>
                   <Button variant="outline">View more...</Button>
                 </Link>
               </CardFooter>
