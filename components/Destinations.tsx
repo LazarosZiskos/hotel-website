@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import Platamon from "../public/assets/platamon-castle-1.jpg";
+import Platamon from "../public/assets/platamon.jpg";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Olympus from "../public/assets/mount-olympus.jpg"
@@ -34,11 +34,6 @@ const destinations = [
         title: "Skopelos",
         img: "/assets/skopelos.jpg",
         id: 4,
-    },
-    {
-        title: "Platamon Castle",
-        img: "assets/platamon-castle-1.jpg",
-        id: 5,
     },
     {
         title: "Thessaloniki",
@@ -83,7 +78,7 @@ const Destinations = () => {
         {destinations.map((destination) => (
             <Card key={destination.id} className="group">
             <div className="relative overflow-hidden">
-            <img
+            <Image
                 src={destination.img}
                 className="rounded-tl-lg rounded-tr-lg h-[250px] object-fill xl:w-full"
                 alt="image"
