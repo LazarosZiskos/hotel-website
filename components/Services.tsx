@@ -64,7 +64,7 @@ const Services = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {services.map((service) => (
         <Card key={service.id} className="border-gray shadow-2xl">
-          <CardHeader className="">
+          <CardHeader>
           <div className="flex justify-center mb-4">
               <div className="rounded-full bg-primary py-4 px-4 w-16 h-16 flex items-center justify-center text-white">
                 {service.icon}
