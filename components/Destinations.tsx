@@ -1,17 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import Platamon from "../public/assets/platamon.jpg";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import Olympus from "../public/assets/mount-olympus.jpg"
-import Meteora from "../public/assets/meteora.jpg"
-import Skiathos from "../public/assets/skiathos.jpg"
-import Skopelos from "../public/assets/skopelos.jpg"
-import Thessaloniki from "../public/assets/thessaloniki.jpg"
-import Athens from "../public/assets/athens.jpg"
-import Dion from "../public/assets/ancient-dion.jpg"
-import Waterland from "../public/assets/waterland.jpg"
-import GreekNight from "../public/assets/greek-night.jpg"
+
 
 
 const destinations = [
@@ -41,25 +32,10 @@ const destinations = [
         id: 6,
     },
     {
-        title: "Athens",
-        img: "/assets/athens.jpg",
-        id: 7,
-    },
-    {
-        title: "Ancient Dion",
-        img: "/assets/ancient-dion.jpg",
-        id: 8,
-    },
-    {
-        title: "Waterland",
-        img: "/assets/waterland.jpg",
-        id: 9,
-    },
-    {
-        title: "Greek Night",
-        img: "/assets/greek-night.jpg",
-        id: 10,
-    },
+      title: "Athens",
+      img: "/assets/athens.jpg",
+      id: 7,
+  }
    
 ]
 
