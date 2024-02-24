@@ -252,7 +252,7 @@ const page = () => {
             alt="about-img"
             width={700}
             height={500}
-            className="w-full h-[400px]"
+            className="w-full h-[400px] object-contain"
           />
         </div>
         <div>

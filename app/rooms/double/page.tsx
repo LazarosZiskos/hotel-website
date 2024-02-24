@@ -66,43 +66,30 @@ function page() {
       </div>
       <div>
         <h2 className="pb-4 text-2xl">Description</h2>
-        <p>
-          Indulge in the ultimate luxury with our newly renovated Junior suite.
-          Immerse yourself in a comfortable and stylish room, adorned with
-          modern and elegant furniture, offering breathtaking sea views and a
-          vibrant street view of the Olympic Beach center. Designed to
-          accommodate a maximum of two people, our Junior suite provides an
-          exquisite blend of tranquility and sophistication.{" "}
+        <p className="leading-loose pb-4">
+          Escape to serenity in our inviting Double Room, designed to provide
+          couples with a haven of relaxation and comfort. Step into a spacious
+          and elegantly furnished room, featuring modern amenities and tasteful
+          decor. Stay connected with complimentary high-speed WiFi and unwind in
+          front of the 32-inch flat-screen TV with satellite channels, offering
+          a wide range of entertainment options. Indulge in the convenience of
+          individual air conditioning, ensuring personalized comfort throughout
+          your stay.
         </p>
-        <p>
+        <p className="leading-loose pb-4">
           {" "}
-          Each room is meticulously furnished with a plush double-size bed,
-          ensuring a restful night's sleep. Stay entertained with a
-          state-of-the-art 43' Smart TV featuring satellite channels. The
-          en-suite bathroom provides convenience and privacy, completing the
-          perfect sanctuary.For your comfort, all rooms are equipped with air
-          conditioning, allowing you to create the ideal ambiance according to
-          your preference.
+          The fully equipped kitchenette allows you to prepare your own meals or
+          snacks, adding an extra layer of convenience to your experience.
+          Refresh yourself in the en-suite bathroom, complete with all the
+          essentials for your comfort and convenience. Step out onto your
+          private balcony to enjoy the fresh air and beautiful views, providing
+          the perfect backdrop for moments of relaxation and reflection.
         </p>
-        <p>
+        <p className="leading-loose">
           {" "}
-          We take great pride in maintaining impeccable cleanliness standards.
-          Our dedicated team ensures that each room is meticulously cleaned on a
-          daily basis. Additionally, fresh towels and sheets are provided every
-          third day, guaranteeing a consistently refreshed environment
-          throughout your stay. Stay connected and enjoy seamless browsing with
-          our complimentary high-speed Wi-Fi, available in all rooms. Rest
-          assured, our rooms are soundproofed, ensuring a peaceful and
-          uninterrupted experience.
-        </p>
-        <p>
-          {" "}
-          Furthermore, we maintain a non-smoking policy throughout the premises
-          to provide a fresh and healthy atmosphere for all our esteemed guests.
-          Discover the epitome of comfort, elegance, and relaxation in our newly
-          renovated Junior suite. Whether you're traveling for business or
-          leisure, our aim is to surpass your expectations and provide you with
-          an exceptional stay.
+          Whether you're here for a romantic getaway or a rejuvenating retreat,
+          our Double Room offers the perfect blend of style and comfort for an
+          unforgettable stay that leaves you refreshed and revitalized.
         </p>
       </div>
       <div className="mt-10 mb-10">
