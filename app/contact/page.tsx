@@ -1,4 +1,5 @@
 "use client";
+import Map from "@/components/Map";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
@@ -202,6 +203,11 @@ const page = () => {
             </div>
           </div>
         </section>
+      </div>
+
+      <div className="container mb-5 w-[410px] md:w-[700px] lg:w-[950px] xl:w-[1150px]">
+        <h1 className="text-center text-3xl pb-4 font-bold">Our Location</h1>
+        <Map />
       </div>
     </section>
   );
