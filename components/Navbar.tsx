@@ -16,10 +16,11 @@ const pathname = usePathname();
 
 
   return (
+    <header>
     <nav>
       <div className="py-5 flex justify-between items-center container">
         <div>
-          <h1 className="text-3xl font-bold">Hotel</h1>
+          <h1 className="text-3xl font-bold"><Link href="/">Hotel</Link></h1>
         </div>
 
         <div>
@@ -76,6 +77,7 @@ const pathname = usePathname();
         </div>
       </div>
     </nav>
+    </header>
   );
 };
 

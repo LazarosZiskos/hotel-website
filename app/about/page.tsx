@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 const services = [
@@ -334,32 +335,32 @@ const page = () => {
           <h1 className="text-4xl">Some of the services that we offer</h1>
           {services.map((service) => (
             <div className="pt-4" key={service.id}>
-              <h2 className="text-xl text-primary">&#10004; {service.title}</h2>
-              <p className="pt-2 text-slate-400/70">
-                {service.description}
-              </p>
-              {service.important && 
-              <p className="pt-2 text-red-600">
-                {service.important}
-              </p>}
+              <div className="flex items-center gap-2">
+                <Check className="text-primary"/>
+                <h2 className="text-xl text-primary"> {service.title}</h2>
+              </div>
+              <p className="pt-2 text-slate-400/70">{service.description}</p>
+              {service.important && (
+                <p className="pt-2 text-red-600">{service.important}</p>
+              )}
               <div className="h-[1px] bg-slate-300 w-full mt-4"></div>
             </div>
           ))}
-          <h1 className="text-xl italic pt-4">*Hotel Hellas has the right to make changes in all facilities and the services listed in this description without a prior notice.*</h1>
+          <h1 className="text-xl italic pt-4">
+            *Hotel Hellas has the right to make changes in all facilities and
+            the services listed in this description without a prior notice.*
+          </h1>
         </div>
 
         <div className="mt-10">
           <h1 className="text-4xl">Safety Rules</h1>
           {rules.map((rule) => (
-           <div className="pt-4" key={rule.id}>
+            <div className="pt-4" key={rule.id}>
               <h2 className="text-xl text-red-500">{rule.title}</h2>
-              <p className="pt-2 text-slate-400/70">
-                {rule.description}
-              </p>
+              <p className="pt-2 text-slate-400/70">{rule.description}</p>
               <div className="h-[1px] bg-slate-300 w-full mt-4"></div>
             </div>
           ))}
-
         </div>
       </section>
     </main>
