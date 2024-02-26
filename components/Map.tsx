@@ -25,11 +25,8 @@ function Map() {
                 mapId: "MY_NEXTJS_MAPID"
             }
 
-            // Setup the map
-            const map = new google.maps.Map(mapRef.current as HTMLDivElement);
-
-            // Set map options
-            map.setOptions(mapOptions);
+            // Create map instance
+            const map = new google.maps.Map(mapRef.current as HTMLDivElement, mapOptions);
 
             // Put up marker
             const marker = new google.maps.Marker({
