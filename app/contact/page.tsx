@@ -206,10 +206,10 @@ const page = () => {
         </section>
       </div>
 
-      <div className="container mb-5 w-[410px] md:w-[700px] lg:w-[950px] xl:w-[1150px]">
+      {/* <div className="container mb-5 w-[410px] md:w-[700px] lg:w-[950px] xl:w-[1150px]">
         <h1 className="text-center text-3xl pb-4 font-bold">Our Location</h1>
         <Map />
-      </div>
+      </div> */}
     </section>
   );
 };
