@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <section className=" bg-black/90 px-20">
       <div className="container">
-        <div className="pt-10 pb-10 flex flex-col space-y-10 md:flex-row md:justify-between items-center">
-          <div className="pt-8 space-y-10 items-center justify-center">
+        <div className="pt-10 pb-10 md:flex md:items-center md:justify-between gap-10">
+          <div className="pt-8 space-y-10 flex flex-col items-center justify-center">
             <h3 className="text-white font-bold text-5xl ">Hotel</h3>
             <ul className="flex space-x-4">
               <li>
@@ -27,8 +27,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white items-center">
-            <div className="space-y-6">
+          <div className=" hidden md:grid grid-cols-2 gap-10 text-white items-center">
+            <div className="space-y-6 ">
               <h2 className="text-[18px]">Directory</h2>
               <ul className="space-y-2">
                 <li className="text-slate-400 hover:text-slate-200">
@@ -54,6 +54,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+            <div>
+            <h4 className="text-sm text-center text-primary/60 pb-4 pt-4">&copy; Copyright N.D. Devs 2024</h4>
+            </div>
       </div>
     </section>
   );

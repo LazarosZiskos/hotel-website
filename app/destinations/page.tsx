@@ -64,12 +64,12 @@ const page = () => {
   return (
     <main>
         <section className='container mt-24'>
-            <h1 className='text-center text-5xl mb-10'>Things to do near Paralia</h1>
+            <h1 className='text-center text-5xl mb-10 font-bold'>Things to do near Paralia</h1>
             {destinations.map((destination) => (
-            <div className='w-full flex items-center justify-center gap-6 mb-10'>
-                <Image src={destination.img} alt='destination-img' width={300} height={400} className='w-1/2 rounded-lg' priority/>
-                <div className='w-1/2 flex flex-col items-center justify-center gap-6'>
-                <h2 className='text-xl font-bold'>{destination.title}</h2>
+            <div className='flex flex-col justify-between items-center w-full gap-6 mb-10 lg:flex-row'>
+                <Image src={destination.img} alt='destination-img' width={300} height={400} className='w-full rounded-lg lg:w-1/2' priority/>
+                <div className='w-full flex-col items-center justify-center gap-6 '>
+                <h2 className='text-2xl pb-4'>{destination.title}</h2>
                 <p className='leading-relaxed'>{destination.details}</p>
                 </div>
             </div>

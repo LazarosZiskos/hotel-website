@@ -1,37 +1,32 @@
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
 import Single from "../public/assets/single-room.jpg";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 const rooms = [
   {
     id: 1,
     title: "Single",
-    description: "One large bed",
+    route: "/rooms/single"
   },
   {
     id: 2,
     title: "Double",
-    description: "Double bed / Two single beds",
+    route: "/rooms/double"
   },
   {
-    id: 1,
+    id: 3,
     title: "Triple",
-    description: "Double bed plus One single bed",
+    route: "/rooms/triple"
   },
   {
-    id: 1,
+    id: 4,
     title: "Family",
-    description: "Two double beds",
+    route: "/rooms/family"
   },
 ];
 
@@ -47,38 +42,31 @@ const Rooms = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap md:flex-nowrap gap-3 w-full">
-        {rooms.map((room) => {
-          return (
-            <div className="pt-10 w-full md:w-1/4 hover:scale-105" key={room.id}>
-              <Link href="/rooms">
-                <Card className="hover:border-primary transition-all ease-in-out">
-                  <CardHeader className="text-center">
-                    <CardTitle>{room.title} Room</CardTitle>
-                    <CardDescription className="text-slate-400/70 min-h-[60px] pt-3">{room.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Image
-                      src={Single}
-                      alt="card-image"
-                      width={150}
-                      height={300}
-                      className="w-full rounded-bl-lg rounded-br-lg"
-                    />
-                  </CardContent>
-                  {/* <CardFooter>
-                    <Button className="w-full">Read More</Button>
-                  </CardFooter> */}
-                </Card>
-              </Link>
+      <div className="grid md:grid-cols-4 gap-4 pt-4">
+        {rooms.map((room) => (
+          <Card key={room.id} className="group">
+            <div className="relative overflow-hidden">
+              <Image
+                src={Single}
+                className="rounded-tl-lg rounded-tr-lg h-[250px] object-fill xl:w-full"
+                alt="image"
+                width={400}
+                height={300}
+              />
+              <div
+                className="absolute h-full w-full bg-black/20 flex items-center rounded-tl-lg rounded-tr-lg
+              justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 "
+              >
+                <Link href={room.route}>
+                  <Button variant="outline">Read More</Button>
+                </Link>
+              </div>
             </div>
-          );
-        })}
-      </div>
-      <div >
-        <Link href="/rooms" className="flex justify-center md:justify-start mt-6 gap-x-2 ">
-          <Button>View All <ArrowRight className="ml-4"/></Button>
-        </Link>
+            <CardContent className="p-2 text-center text-[18px] ">
+              <p>{room.title}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );
