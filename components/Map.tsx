@@ -26,12 +26,15 @@ function Map() {
             }
 
             // Setup the map
-            const map = new google.maps.Map(mapRef.current as HTMLDivElement, mapOptions);
+            const map = new google.maps.Map(mapRef.current as HTMLDivElement);
+
+            // Set map options
+            map.setOptions(mapOptions);
 
             // Put up marker
             const marker = new google.maps.Marker({
-                map: map,
-                position: position
+                position: position,
+                map: map
             });
         }
         initMap();
