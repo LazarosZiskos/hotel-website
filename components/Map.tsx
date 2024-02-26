@@ -1,23 +1,17 @@
-
-import { useEffect, useRef, } from "react";
+import { useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 
 function Map() {
     const mapRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-
         const initMap = async () => {
-
             const loader = new Loader({
-                apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+                apiKey: "AIzaSyAUEvLDQe1iwwliGbYb-HslHGjMZP7wXRk",
                 version: "weekly"
             });
 
-            const { Map } = await loader.importLibrary('maps');
-            //init marker
-            const {Marker} = await loader.importLibrary('marker') as google.maps.MarkerLibrary
-
+            const google = await loader.load();
 
             const position = {
                 lat: 40.268427626420625,
@@ -31,23 +25,21 @@ function Map() {
                 mapId: "MY_NEXTJS_MAPID"
             }
 
-            //Setup the map
-            const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
+            // Setup the map
+            const map = new google.maps.Map(mapRef.current as HTMLDivElement, mapOptions);
 
-            // put up marker
-            const marker = new Marker({
+            // Put up marker
+            const marker = new google.maps.Marker({
                 map: map,
                 position: position
             });
-
-
         }
         initMap();
     }, [])
 
     return (
         <div className="h-[400px]" ref={mapRef}/>
-
     )
 }
+
 export default Map;
