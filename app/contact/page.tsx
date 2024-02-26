@@ -1,15 +1,15 @@
 "use client";
 import Map from "@/components/Map";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { FormEvent } from "react";
 
 const page = () => {
   const [result, setResult] = React.useState("Send");
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     formData.append("access_key", "9ef1351b-cda3-428c-a2d5-195e0ad8ead2");
 
@@ -25,7 +25,8 @@ const page = () => {
       console.log("Error", res);
       setResult(res.message);
     }
-  };
+
+};
   return (
     <section>
       <div className="container my-24 mx-auto md:px-6">
@@ -65,7 +66,7 @@ const page = () => {
                   <textarea
                     className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                     id="exampleFormControlTextarea1"
-                    rows="3"
+                    rows={3}
                     name="message"
                     placeholder="Your message"
                   ></textarea>

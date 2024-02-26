@@ -22,7 +22,7 @@ import Link from "next/link";
 
 const rooms = [
   {
-    id: 1,
+    id: "single",
     type: "Single Room",
     details:
       "Indulge in the comfort and convenience of our meticulously appointed Single Room. Designed with the solo traveler in mind, this cozy sanctuary offers everything you need for a restful stay. Step into a spacious and beautifully renovated room, adorned with modern furnishings and thoughtful touches. Relax and unwind as you enjoy the convenience of complimentary high-speed WiFi, a 32-inch flat-screen TV with satellite channels, and individual air conditioning.",
@@ -30,7 +30,7 @@ const rooms = [
     href: "/rooms/single",
   },
   {
-    id: 2,
+    id: "double",
     type: "Double Room",
     details:
       "Escape to serenity in our inviting Double Room, designed to provide couples with a haven of relaxation and comfort. Step into a spacious and elegantly furnished room, featuring modern amenities and tasteful decor. Stay connected with complimentary high-speed WiFi and unwind in front of the 32-inch flat-screen TV with satellite channels, offering a wide range of entertainment options. Indulge in the convenience of individual air conditioning, ensuring personalized comfort throughout your stay.",
@@ -38,7 +38,7 @@ const rooms = [
     href: "/rooms/double",
   },
   {
-    id: 3,
+    id: "triple",
     type: "Triple Room",
     img: "/assets/single-room.jpg",
     href: "/rooms/triple",
@@ -46,7 +46,7 @@ const rooms = [
       "Experience the ultimate in comfort and convenience in our spacious Triple Room, ideal for families or small groups seeking a memorable stay. Step into a beautifully renovated space, tastefully decorated with modern furnishings and thoughtful touches that create a welcoming atmosphere. Stay connected with complimentary high-speed WiFi and enjoy entertainment on the 32-inch flat-screen TV with satellite channels, providing endless entertainment options for guests of all ages. Keep cool and comfortable with individual air conditioning, ensuring a personalized environment throughout your stay.",
   },
   {
-    id: 4,
+    id: "family",
     type: "Family Room",
     img: "/assets/single-room.jpg",
     href: "/rooms/family",
