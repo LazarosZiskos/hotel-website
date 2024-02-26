@@ -13,6 +13,11 @@ function Map() {
 
             const google = await loader.load();
 
+            if (!google) {
+                console.error("Failed to load Google Maps API");
+                return;
+            }
+
             const position = {
                 lat: 40.268427626420625,
                 lng: 22.596055941125844
@@ -34,6 +39,7 @@ function Map() {
                 map: map
             });
         }
+
         initMap();
     }, [])
 
