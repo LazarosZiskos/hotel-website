@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const destinations = [
   {
@@ -19,21 +20,21 @@ const destinations = [
     img: "/assets/skiathos.jpg",
     id: 3,
   },
-  {
-    title: "Skopelos",
-    img: "/assets/skopelos.jpg",
-    id: 4,
-  },
-  {
-    title: "Thessaloniki",
-    img: "/assets/thessaloniki.jpg",
-    id: 6,
-  },
-  {
-    title: "Athens",
-    img: "/assets/athens.jpg",
-    id: 7,
-  },
+  // {
+  //   title: "Skopelos",
+  //   img: "/assets/skopelos.jpg",
+  //   id: 4,
+  // },
+  // {
+  //   title: "Thessaloniki",
+  //   img: "/assets/thessaloniki.jpg",
+  //   id: 6,
+  // },
+  // {
+  //   title: "Athens",
+  //   img: "/assets/athens.jpg",
+  //   id: 7,
+  // },
 ];
 
 const Destinations = () => {
@@ -67,7 +68,11 @@ const Destinations = () => {
         ))}
       </div>
       <div className=" flex justify-end mt-6">
-        <Button variant="outline" >View all destinations <ArrowRight className="pl-1"/></Button>
+        <Link href="/destinations">
+          <Button variant="outline">
+            View more destinations <ArrowRight className="pl-1" />
+          </Button>
+        </Link>
       </div>
     </section>
   );
