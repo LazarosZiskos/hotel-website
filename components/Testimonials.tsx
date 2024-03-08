@@ -2,27 +2,32 @@
 
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
-
+import { Reveal } from "./utils/Reveal";
 
 export function Testimonials() {
   return (
-    <section className="container mt-[100px] mb-[100px]">
-      <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl text-center">
-        What our <span className="text-primary">guests</span> have to say about
-        us?
-      </h2>
-      <p className="text-slate-400/70 text-[14px] md:text-[18px] text-center mb-6">
-        Read some of the reviews that our guests wrote about us!
-      </p>
+    <section className="container pt-[100px] mb-[100px]">
+      <Reveal>
+        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl text-center">
+          What our <span className="text-primary">guests</span> have to say
+          about us?
+        </h2>
+      </Reveal>
+      <Reveal>
+        <p className="text-slate-400/70 text-[14px] md:text-[18px] text-center mb-6">
+          Read some of the reviews that our guests wrote about us!
+        </p>
+      </Reveal>
 
-      <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-        />
-        
-      </div>
+      <Reveal>
+        <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+          />
+        </div>
+      </Reveal>
     </section>
   );
 }
@@ -41,7 +46,8 @@ const testimonials = [
     title: "Hamlet",
   },
   {
-    quote: "Not much to say! Location 10/10, cleanliness 10/10, facilities 10/10! The only bad thing was that we couldn't stay for longer! :)",
+    quote:
+      "Not much to say! Location 10/10, cleanliness 10/10, facilities 10/10! The only bad thing was that we couldn't stay for longer! :)",
     name: "Maria Papadopoulou",
     title: "A Dream Within a Dream",
   },

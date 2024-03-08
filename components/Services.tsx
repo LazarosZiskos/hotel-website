@@ -12,6 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Reveal } from "./utils/Reveal";
 
 const services = [
   {
@@ -21,7 +22,7 @@ const services = [
     id: 1,
   },
   {
-    title: "24-hour Reception",
+    title: "Reception",
     description: "Our reception works 24/7!",
     icon: <ConciergeBell />,
     id: 2,
@@ -55,31 +56,37 @@ const services = [
 const Services = () => {
   return (
     <section className="container mt-[100px] mb-[100px]">
-      <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl text-center">
-        Our Services
-      </h2>
-      <p className="text-slate-400/70 text-[14px] md:text-[18px] text-center mb-6">
-        We offer a wide variety of services.
-      </p>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {services.map((service) => (
-          <Card key={service.id} className="border-gray shadow-2xl">
-            <CardHeader>
-              <div className="flex justify-center mb-4">
-                <div className="rounded-full bg-primary py-4 px-4 w-16 h-16 flex items-center justify-center text-white">
-                  {service.icon}
+      <Reveal>
+        <h2 className="text-2xl font-bold tracking-wider pb-5 md:text-5xl text-center">
+          Our Services
+        </h2>
+      </Reveal>
+      <Reveal>
+        <p className="text-slate-400/70 text-[14px] md:text-[18px] text-center mb-6">
+          We offer a wide variety of services.
+        </p>
+      </Reveal>
+      <Reveal>
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <Card key={service.id} className="border-gray shadow-xl mb-4">
+              <CardHeader>
+                <div className="flex justify-center mb-4">
+                  <div className="rounded-full bg-primary py-4 px-4 w-16 h-16 flex items-center justify-center text-white">
+                    {service.icon}
+                  </div>
                 </div>
-              </div>
-              <CardTitle className="text-center mb-4">
-                {service.title}
-              </CardTitle>
-              <CardDescription className="text-[16px] text-center pt-4 text-slate-400">
-                {service.description}
-              </CardDescription>
-            </CardHeader>
-          </Card>
-        ))}
-      </div>
+                <CardTitle className="text-center mb-4">
+                  {service.title}
+                </CardTitle>
+                <CardDescription className="text-[16px] text-center pt-4 text-slate-400">
+                  {service.description}
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </Reveal>
     </section>
   );
 };
