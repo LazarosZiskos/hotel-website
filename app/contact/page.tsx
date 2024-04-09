@@ -1,4 +1,5 @@
 "use client";
+import GoogleMapSection from "@/components/GoogleMapSection";
 import { Button } from "@/components/ui/button";
 import React, { FormEvent } from "react";
 
@@ -24,8 +25,7 @@ const page = () => {
       console.log("Error", res);
       setResult(res.message);
     }
-
-};
+  };
   return (
     <section>
       <div className="container my-24 mx-auto md:px-6">
@@ -49,8 +49,8 @@ const page = () => {
                   />
                 </div>
                 <div className="relative mb-6" data-te-input-wrapper-init>
-                <label className="text-lg text-slate-700/80">Email</label>
-                  
+                  <label className="text-lg text-slate-700/80">Email</label>
+
                   <input
                     type="email"
                     name="email"
@@ -58,10 +58,9 @@ const page = () => {
                     id="exampleInput91"
                     placeholder="Email address"
                   />
-                  
                 </div>
                 <div className="relative mb-6" data-te-input-wrapper-init>
-                <label className="text-lg text-slate-700/80">Message</label>
+                  <label className="text-lg text-slate-700/80">Message</label>
                   <textarea
                     className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                     id="exampleFormControlTextarea1"
@@ -203,6 +202,9 @@ const page = () => {
             </div>
           </div>
         </section>
+        <div className="w-full mt-5 focus-visible:outline-none">
+          <GoogleMapSection />
+        </div>
       </div>
     </section>
   );
