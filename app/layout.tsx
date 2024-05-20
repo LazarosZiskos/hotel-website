@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
+import ScrollButton from "@/components/ScrollButton";
 
 const poppins = Poppins({weight:"400", subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <ScrollButton />
           <Footer />
         </ThemeProvider>
       </body>
