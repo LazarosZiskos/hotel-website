@@ -76,7 +76,7 @@ const Destinations = () => {
       </Reveal>
       <div className=" flex justify-end mt-6">
         <Reveal>
-          <Link href="/destinations">
+          <Link href="/destinations" aria-label="link to see all the nearby destinations">
             <Button variant="outline">
               View more destinations <ArrowRight className="pl-1" />
             </Button>

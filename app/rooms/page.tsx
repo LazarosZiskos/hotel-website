@@ -106,7 +106,7 @@ const page = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-end pt-20">
-                  <Link href={room.href}>
+                  <Link href={room.href} aria-label="link to view more details about each room">
                     <Button variant="outline">View more...</Button>
                   </Link>
                 </CardFooter>

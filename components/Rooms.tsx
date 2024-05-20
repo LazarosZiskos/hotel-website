@@ -60,7 +60,7 @@ const Rooms = () => {
                   className="absolute h-full w-full bg-black/20 flex items-center rounded-tl-lg rounded-tr-lg
               justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 "
                 >
-                  <Link href={room.route}>
+                  <Link href={room.route} aria-label="Details about the room of your choice">
                     <Button variant="outline">Read More</Button>
                   </Link>
                 </div>

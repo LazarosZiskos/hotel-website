@@ -26,19 +26,19 @@ const pathname = usePathname();
         <div>
           <ul className="hidden items-center justify-center gap-8 font-medium md:flex">
             <li>
-              <Link className={`transition-all hover:text-primary ease-in-out duration-300`} href="/">Home</Link>
+              <Link className={`transition-all hover:text-primary ease-in-out duration-300`} href="/" aria-label="Return to homepage">Home</Link>
             </li>
             <li>
-              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/about" ? "text-primary" : ""}`} href="/about">About</Link>
+              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/about" ? "text-primary" : ""}`} href="/about" aria-label="Read More about our hotel here">About</Link>
             </li>
             <li>
-              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/rooms" ? "text-primary" : ""}`} href="/rooms">Rooms</Link>
+              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/rooms" ? "text-primary" : ""}`} href="/rooms" aria-label="Read more about our rooms here">Rooms</Link>
             </li>
             <li>
-              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/destinations" ? "text-primary" : ""}`} href="/destinations">Destinations</Link>
+              <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/destinations" ? "text-primary" : ""}`} href="/destinations" aria-label="Explore nearby destinations here">Destinations</Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href="/contact" aria-label="Contact us">
                 <Button className="">Contact</Button>
               </Link>
             </li>
@@ -53,19 +53,19 @@ const pathname = usePathname();
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link className="transition-all active:text-primary hover:text-primary ease-in-out duration-300 " href="/">Home</Link>
+                  <Link className="transition-all active:text-primary hover:text-primary ease-in-out duration-300 " href="/" aria-label="Read More about our hotel here">Home</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/about" ? "text-primary" : ""}`} href="/about">About</Link>
+                  <Link className={`transition-all hover:text-primary ease-in-out duration-300 ${pathname == "/about" ? "text-primary" : ""}`} href="/about" aria-label="Read More about our hotel here">About</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/rooms">Rooms</Link>
+                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/rooms" aria-label="Read more about our rooms here">Rooms</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/destinations">Destinations</Link>
+                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/destinations" aria-label="Explore nearby destinations here">Destinations</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/contact">Contact</Link>
+                  <Link className="transition-all hover:text-primary ease-in-out duration-300" href="/contact" aria-label="Contact us">Contact</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

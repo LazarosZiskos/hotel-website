@@ -10,17 +10,17 @@ const Footer = () => {
             <h3 className="text-white font-bold text-5xl ">Hotel</h3>
             <ul className="flex space-x-4">
               <li>
-                <Link href="https://facebook.com">
+                <Link href="https://facebook.com" aria-label="link to our facebook page">
                   <Facebook className="text-slate-400 hover:text-slate-200" />
                 </Link>
               </li>
               <li>
-                <Link href="https://instagram.com">
+                <Link href="https://instagram.com" aria-label="link to our instagram page">
                   <Instagram className="text-slate-400 hover:text-slate-200" />
                 </Link>
               </li>
               <li>
-                <Link href="https://gmail.com">
+                <Link href="https://gmail.com" aria-label="link to send us an email">
                   <Mail className="text-slate-400 hover:text-slate-200" />
                 </Link>
               </li>
@@ -32,13 +32,13 @@ const Footer = () => {
               <h2 className="text-[18px]">Directory</h2>
               <ul className="space-y-2">
                 <li className="text-slate-400 hover:text-slate-200">
-                  <Link href="/about">About us</Link>
+                  <Link href="/about" aria-label="Read more about our hotel here">About us</Link>
                 </li>
                 <li className="text-slate-400 hover:text-slate-200">
-                  <Link href="/rooms">Rooms</Link>
+                  <Link href="/rooms" aria-label="Read more about our rooms here">Rooms</Link>
                 </li>
                 <li className="text-slate-400 hover:text-slate-200">
-                  <Link href="/destinations">Destinations</Link>
+                  <Link href="/destinations" aria-label="Read more about nearby destinations here">Destinations</Link>
                 </li>
               </ul>
             </div>
